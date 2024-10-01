@@ -1,0 +1,25 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "Install WordPress Spanish pack",
+		"author": "JoseRBernabeu",
+		"description": "Installs and activates the latest WordPress Spanish translation pack from https://translate.wordpress.org/ \u2013 for WordPress core.",
+		"categories": ["core"]
+	},
+    "siteOptions": {
+        "blogname": "WordPress en español de España"
+    },	
+	"landingPage": "/wp-admin/?welcome=0",
+	"steps": [
+	  {
+		"step": "setSiteLanguage",
+		"language": "es_ES"
+	  }
+	],
+	"preferredVersions": {
+	  "php": "8.0",
+	  "wp": "latest"
+	},
+	"features": {},
+	"login": true
+}
